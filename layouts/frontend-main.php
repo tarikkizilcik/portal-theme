@@ -57,16 +57,17 @@ unset($languages[$lang]);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body style="background-color:#EAFFFA">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => '<b>Employee Authentication Module</b>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar navbar-fixed-top',
+            'style' => 'background-color:#F9DC5C'
         ],
     ]);
     $menuItems = [
